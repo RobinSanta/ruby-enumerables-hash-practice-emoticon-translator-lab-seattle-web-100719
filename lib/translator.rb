@@ -7,7 +7,7 @@ def load_library(file_path)
   emoticons = YAML.load(file)
 end
 
-def get_japanese_emoticon()
+def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
   emoji = emoticons.values.find {|faces| faces[0] == emoticon}
   emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
