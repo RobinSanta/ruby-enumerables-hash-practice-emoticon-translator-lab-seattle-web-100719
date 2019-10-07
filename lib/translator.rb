@@ -2,7 +2,7 @@
 require "yaml"
 
 
-def load_library(get_meaning, )
+def load_library(get_meaning, get_emoticon)
   file = File.read(get_meaning)
   emoticons = YAML.load(file)
 end
