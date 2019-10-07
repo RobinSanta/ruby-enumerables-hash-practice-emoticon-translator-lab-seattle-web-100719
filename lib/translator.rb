@@ -8,7 +8,9 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon
-  
+  emoticons = load_library(file_path)
+  emoji = emoticons.values.find {|faces| faces[0] == emoticon}
+  emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
 end
 
 def get_english_meaning
