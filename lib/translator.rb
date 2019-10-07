@@ -2,9 +2,8 @@
 require "yaml"
 
 
-def load_library(get_meaning, get_emoticon)
-  file = File.read(get_meaning)
-  get_meaning = YAML.load(file)
+def load_library()
+  
 end
 
 def get_japanese_emoticon
